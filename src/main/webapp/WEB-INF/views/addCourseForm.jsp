@@ -33,7 +33,7 @@ h1 {
 	text-align: center;
 	margin-top: 0px;
 	color: white;
-	padding-top:20px;
+	padding-top: 20px;
 	text-decoration: underline;
 }
 
@@ -70,17 +70,17 @@ main or body content
 main {
 	width: 100%;
 	height: 65.3vh;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),url('/images/2.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+		url('/images/2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color:lightblue;
+	background-color: lightblue;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	color: black;
 }
-
 
 section h3 {
 	font-size: 35px;
@@ -152,9 +152,11 @@ footer a {
 		<h1>Welcome To Course Enrollment App</h1>
 		<nav class="navbar">
 			<ul>
-				<li><a href="${pageContext.request.contextPath}/view/courses">All Courses</a></li>
+				<li><a href="${pageContext.request.contextPath}/view/courses">All
+						Courses</a></li>
 				<%-- <li><a href="${pageContext.request.contextPath}/view/enrolledcourses">My EnrolledCourses</a></li> --%>
-				<li><a href="${pageContext.request.contextPath}/view/profile">My Profile</a></li>
+				<li><a href="${pageContext.request.contextPath}/view/profile">My
+						Profile</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -164,7 +166,8 @@ footer a {
 	</h2>
 	<c:if test="${pageContext.request.userPrincipal.name != null}">
 		<form id="logoutForm" method="POST" action="${contextPath}/logout">
-			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+			<input type="hidden" name="${_csrf.parameterName}"
+				value="${_csrf.token}" />
 		</form>
 	</c:if>
 	<main>
@@ -172,10 +175,11 @@ footer a {
 			<h1>
 				<u> Add New Course </u>
 			</h1>
-			<form:form action="${pageContext.request.contextPath}/course/save" method="POST" modelAttribute="course">
+			<form:form action="${pageContext.request.contextPath}/course/save"
+				method="POST" modelAttribute="course">
 				<table>
-					
-					
+
+
 					<tr>
 						<td>Course Name :</td>
 						<td><form:input path="courseName" /></td>
@@ -205,7 +209,7 @@ footer a {
 		</section>
 	</main>
 	<footer>
-		<a href="#">copy_write@manisha's_blog_spot</a>
+		<a href="#">copy_write@Arjit's_blog_spot</a>
 	</footer>
 </body>
 </html>

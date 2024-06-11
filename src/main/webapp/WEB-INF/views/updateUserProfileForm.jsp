@@ -217,7 +217,7 @@ footer a {
 		</section>
 	</main>
 	<footer>
-		<a href="#">copy_write@manisha's_blog_spot</a>
+		<a href="#">copy_write@Arjitj's7_blog_spot</a>
 	</footer>
 </body>
 </html>

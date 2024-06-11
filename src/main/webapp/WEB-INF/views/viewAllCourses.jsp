@@ -68,7 +68,7 @@ main or body content
 ######################################################################################################*/
 main {
 	width: 100%;
-	height: 68.3vh;
+	height: 75.3vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
 		url('/images/2.jpg');
 	background-repeat: no-repeat;
@@ -218,7 +218,7 @@ footer a {
 	</main>
 	<!-- ######################################## footer content ########################################-->
 	<footer>
-		<a href="#">copy_write@manisha_blog_spot</a>
+		<a href="#">copy_write@Arjitj's_blog_spot</a>
 	</footer>
 </body>
 </html>

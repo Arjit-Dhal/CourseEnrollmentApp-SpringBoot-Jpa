@@ -42,5 +42,6 @@ public class CourseRegistrationApp {
 	RestTemplate restTemplate() {
 		final RestTemplate restTemplate = new RestTemplate();
 		return restTemplate;
+
 	}
 }

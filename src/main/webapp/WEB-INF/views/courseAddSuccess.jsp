@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html>
@@ -33,8 +33,8 @@ h1 {
 	text-align: center;
 	margin: 0px;
 	color: white;
-	padding-top:25px;
-	text-decoration:underline;
+	padding-top: 25px;
+	text-decoration: underline;
 }
 
 .navbar {
@@ -68,7 +68,8 @@ main or body content
 main {
 	width: 100%;
 	height: 200vh;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('images/images3.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+		url('images/images3.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
@@ -143,29 +144,30 @@ footer a {
 </style>
 </head>
 <body>
-<!-- ######################################## Header  content  ################################## -->
+	<!-- ######################################## Header  content  ################################## -->
 	<header>
 		<h1>Welcome To Course Registration APP</h1>
 		<nav class="navbar">
 			<ul>
-			<li><a href="${pageContext.request.contextPath}/view/courses">All Courses</a></li>
+				<li><a href="${pageContext.request.contextPath}/view/courses">All
+						Courses</a></li>
 			</ul>
 		</nav>
 	</header>
-	
+
 	<br>
 	<br>
 	<br>
-	<h1><center>${reg}</center></h1>
-	
+	<h1>
+		<center>${reg}</center>
+	</h1>
+
 	<main>
-	<section>
-	
-   </section>
-</main>
-<!-- ######################################## footer content ########################################-->
+		<section></section>
+	</main>
+	<!-- ######################################## footer content ########################################-->
 	<footer>
-		<a href="#">copy_write@manisha's_blog_spot</a>
+		<a href="#">copy_write@Arjitj's_blog_spot</a>
 	</footer>
 </body>
 </html>

@@ -73,8 +73,9 @@ public class UsersMvcController {
 	}
 
 	@PostMapping(value = "/register/save")
-	public String saveUserRegistration(@Valid @ModelAttribute("userRegForm") UserReg userReg,BindingResult result, ModelMap map) {
-		
+	public String saveUserRegistration(@Valid @ModelAttribute("userRegForm") UserReg userReg, BindingResult result,
+			ModelMap map) {
+
 		if (result.hasErrors()) {
 			return "userRegistrationForm";
 		}
@@ -182,7 +183,7 @@ public class UsersMvcController {
 			return "viewCoursesAdmin";
 		}
 	}
-	
+
 	@GetMapping(value = "/user/search/topic")
 	public String searchTopicByToicName(@RequestParam("topicName") String topicName, ModelMap map) {
 		List<Course> courseListForUser = userService.searchAllTopicsByTopicName(topicName).get();
@@ -191,12 +192,13 @@ public class UsersMvcController {
 		return "viewAllEnrolledCoursesForUser";
 	}
 
-
 	@GetMapping(value = "/user/search/enrolled/topic")
 	public String searchEnrolledTopicByToicName(@RequestParam("topicName") String topicName, ModelMap map) {
-		
-		//Optional<List<UserCourseEnroll>> courseListForUser = userService.searchAllEnrolledTopicsByTopicName(securityUtil.getLoginUsername(),topicName);
-		List<Course> courseListForUser = userService.searchAllEnrolledTopicsByTopicName(securityUtil.getLoginUsername(),topicName);
+
+		// Optional<List<UserCourseEnroll>> courseListForUser =
+		// userService.searchAllEnrolledTopicsByTopicName(securityUtil.getLoginUsername(),topicName);
+		List<Course> courseListForUser = userService.searchAllEnrolledTopicsByTopicName(securityUtil.getLoginUsername(),
+				topicName);
 		if (courseListForUser != null)
 			map.put("enrolledCourseList", courseListForUser);
 		return "viewAllEnrolledCoursesForUser";
@@ -226,7 +228,7 @@ public class UsersMvcController {
 	}
 
 	@PostMapping(value = "/course/update")
-	public String updateCourse(@Valid @ModelAttribute(name="courseUpdate") Course course, BindingResult br) {
+	public String updateCourse(@Valid @ModelAttribute(name = "courseUpdate") Course course, BindingResult br) {
 		if (br.hasErrors()) {
 			return "updateCourseForm";
 		}

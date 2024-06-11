@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -73,7 +73,7 @@ main or body content
 ######################################################################################################*/
 main {
 	width: 100%;
-	height: 74.3vh;
+	height: 80.3vh;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
 		url('/images/2.jpg');
 	background-repeat: no-repeat;
@@ -121,7 +121,7 @@ section a {
 	letter-spacing: 1px;
 	color: white;
 }
-
+-->
 section .btn_login {
 	background: orange;
 }
@@ -174,12 +174,12 @@ footer a {
 			<h3>Thank You for visiting this site</h3>
 			<h1 color="green">Online Learning Made Easy</h1>
 			<p>Better Way To Upgrade Your Skills</p>
-			<a href="register/form" class="btn_signup">Sign Up</a> -->
+			<a href="register/form" class="btn_signup">Sign Up</a>
 		</section>
 	</main>
 	<!-- ######################################## footer content ########################################-->
 	<footer>
-		<a href="#">copy_write@Manisha_blog_spot</a>
+		<a href="#">copy_write@Arjit_blog_spot</a>
 	</footer>
 
 </body>
